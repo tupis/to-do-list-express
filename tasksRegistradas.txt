@@ -1,0 +1,13 @@
+{
+  _id: new ObjectId("62a3c7f643ce3d6ecf5c0b9a"),
+  name: 'Perguntar pra pahty',
+  done: false,
+  checklist: new ObjectId("62a3c7ec43ce3d6ecf5c0b93"),
+  __v: 0
+},{
+  _id: new ObjectId("62a3c80a43ce3d6ecf5c0bac"),
+  name: 'Upar essa tarefa no github',
+  done: false,
+  checklist: new ObjectId("62a3c80043ce3d6ecf5c0ba5"),
+  __v: 0
+}
