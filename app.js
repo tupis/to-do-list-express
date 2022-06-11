@@ -3,6 +3,9 @@ const app = express();
 const path = require('path');
 var methodOverride = require('method-override')
 
+const port = process.env.PORT || 3000;
+
+
 const checklistsRouter = require('./src/routes/checklist');
 const taskRouter = require('./src/routes/task');
 const rootRouter = require('./src/routes/index');
@@ -22,6 +25,6 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.set('views', path.join(__dirname, './src/views'));
 app.set('view engine', 'ejs')
 
-app.listen(3000, () => {
+app.listen(port, () => {
     console.log("servidor foi iniciado");
 });
